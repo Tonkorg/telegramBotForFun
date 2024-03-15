@@ -1,4 +1,10 @@
 package ru.tyaga.telegramBotForFun.service;
 
-public class ExchangeRatesService {
+import ru.tyaga.telegramBotForFun.exception.ServiceException;
+
+public interface ExchangeRatesService {
+
+    String getUSDExchangeRate() throws SecurityException, ServiceException;
+    String getEUROxchangeRate() throws SecurityException, ServiceException;
+
 }
